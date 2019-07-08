@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import "nature";
+@mixin hz ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin w ($width) {
+    width: $width;
+}
+
+@mixin h($height:0px) {
+    height: $height;
+}
+
+@mixin nav ($height, $top, $left) {
+    #{$lh}: $height;
+    padding: $top, $left;
+    font-size: $size-z;
+    text-align: center;
+    // width: $width;
+}
